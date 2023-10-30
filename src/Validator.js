@@ -1,5 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import ArraySchema from './ArraySchema.js';
+import ObjectSchema from './ObjectSchema.js';
 import StringSchema from './StringSchema.js';
 
 export default class Validator {
@@ -9,5 +10,9 @@ export default class Validator {
 
   array() {
     return new ArraySchema();
+  }
+
+  object() {
+    return new ObjectSchema();
   }
 }
